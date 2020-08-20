@@ -87,6 +87,9 @@ nextBtnThird.addEventListener('click', function() {
     // Output all info for control
     controlOutput.innerHTML = `
         <table>
+            <tr class="colspan">
+                <td colspan="2">Beställning</td>
+            </tr>
             <tr>
                 <td>Hämtdag: </td>
                 <td>${orderDate.value}</td>
