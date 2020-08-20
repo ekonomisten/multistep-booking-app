@@ -263,9 +263,7 @@ homeBtn.addEventListener('click', function() {
 nextBtnThird.disabled = true;
 
 acceptFee.addEventListener('click', function() {
-    //console.log(acceptFee.checked);
     if(acceptFee.checked === false) {
-        console.log('nu är den av');
         nextBtnThird.disabled = true;
     } else {
         nextBtnThird.disabled = false;
