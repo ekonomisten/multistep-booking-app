@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+
+        <meta charset="utf-8">
+        <title>Multistep Form</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <header>Boka hämtning</header>
+        <div class="progress-bar">
+            <div class="step">
+                <p>Beställ</p>
+                <div class="bullet">
+                    <span>1</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Info</p>
+                <div class="bullet">
+                    <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Avgift</p>
+                <div class="bullet">
+                    <span>3</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Kontroll</p>
+                <div class="bullet">
+                    <span>4</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+        </div>
+        <div class="form-outer">
+            <form action="#">
+
+                <div class="page slidepage">
+                    <div class="title">Fyll i beställning</div>
+                    <div class="field">
+                        <div class="label">Önskad hämtdag*</div> 
+                        <input type="date" name="order_date" id="order_date">
+                    </div>
+                    <div class="field">
+                        <div class="label">Adress*</div>
+                        <input type="text" name="order_address" id="order_address">
+                    </div>
+                    <div class="field">
+                        <div class="label">Ort*</div>
+                        <input type="text" name="order_city" id="order_city">
+                    </div>
+                    <div class="field textarea">
+                        <div class="label">Övrig info*</div>
+                        <textarea name="order_info" id="order_info"></textarea>
+                    </div>
+                    <div class="field nextBtn">
+                        <button>Nästa</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Beställarinformation</div>
+                    <div class="field">
+                        <div class="label">Namn</div>
+                        <input type="text" name="order_name" id="order_name">
+                    </div>
+                    <div class="field">
+                        <div class="label">E-post</div>
+                        <input type="email" name="order_mail" id="order_mail">
+                    </div>
+                    <div class="field">
+                        <div class="label">Telefon</div>
+                        <input type="tel" name="order_phone" id="order_phone">
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-1 prev">Tillbaka</button>
+                        <button class="next-1 next">Nästa</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title">Godkänn avgifter</div>
+                    <div class="field table">
+                        <table>
+                            <tr>
+                                <td>Sollentuna, Kista, Rinkeby, Tensta, Akalla, Husby &amp; Spånga</td>
+                                <td>500kr</td>
+                            </tr>
+                            <tr>
+                                <td>Upplands Väsby, Täby, Danderyd, Solna, Sundbyberg, Bromma, Jakobsberg, Järfälla, Vällingby &amp; Hässelby</td>
+                                <td>750kr</td>
+                            </tr>
+                            <tr>
+                                <td>Kungsängen, Brunna, Bro, Märsta, Sigtuna, Vallentuna, Stockholm, Lidingö, Ekerö, Åkersberga &amp; Vaxholm</td>
+                                <td>1100kr</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="field accept-fees">
+                        <input type="checkbox" name="accept_fees">
+                        <label for="accept_fees">Jag godkänner de avgifter som anges ovan</label>
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-2 prev">Tillbaka</button>
+                        <button class="next-2 next">Nästa</button>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <div class="title submit-title">Kontrollera uppgifterna</div>
+                    <div class="field control">
+                        <div id="controlOutput"></div>
+                        <div class="submit-message"></div>
+                    </div>
+                    <div class="field btns">
+                        <button class="prev-3 prev">Tillbaka</button>
+                        <button class="submit">Beställ <i class="fas fa-car"></i></button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/css/style.css"></script>
+
+</body>
+</html>
