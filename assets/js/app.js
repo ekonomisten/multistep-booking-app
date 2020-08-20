@@ -17,14 +17,37 @@ const acceptFee = document.querySelector('.accept-fees input');
 let max = 4;
 let current = 1;
 
+// Inputs
 let controlOutput = document.querySelector('#controlOutput');
-let pickupDate = document.querySelector('#order_date');
-let pickupAddress = document.querySelector('#order_address');
-let pickupCity = document.querySelector('#order_city');
-let pickupInfo = document.querySelector('#order_info');
-let orderName = document.querySelector('#order_name');
-let orderMail = document.querySelector('#order_mail');
-let orderPhone = document.querySelector('#order_phone');
+let orderDate = document.querySelector('#order_date');
+let orderAddress = document.querySelector('#order_address');
+let orderCity = document.querySelector('#order_city');
+let orderInfo = document.querySelector('#order_info');
+let carRegno = document.querySelector('#car_regno');
+let carRegnoCert = document.querySelector('#car_regno_cert');
+let carRegnoCertDate = document.querySelector('#car_regno_date');
+let carBrand = document.querySelector('#car_brand');
+let carModel = document.querySelector('#car_model');
+let carYear = document.querySelector('#car_year');
+let carColor = document.querySelector('#car_color');
+let carWheels = document.querySelector('#car_wheels');
+let carRegnoQty = document.querySelector('#car_regqty');
+let carKeys = document.querySelector('#car_keys');
+let ownerName = document.querySelector('#owner_name');
+let ownerAddress = document.querySelector('#owner_address');
+let ownerZip = document.querySelector('#owner_zip');
+let ownerCity = document.querySelector('#owner_city');
+let ownerPhone = document.querySelector('#owner_phone');
+let ownerMail = document.querySelector('#owner_mail');
+let otherContact = document.querySelector('#other_contact');
+let otherName = document.querySelector('#other_name');
+let otherAddress = document.querySelector('#other_address');
+let otherZip = document.querySelector('#other_zip');
+let otherCity = document.querySelector('#other_city');
+let otherPhone = document.querySelector('#other_phone');
+let otherMail = document.querySelector('#other_mail');
+let otherInfo = document.querySelector('#other_info');
+
 
 // Prevent form from submit 
 form.addEventListener('submit', function(e) {
@@ -61,32 +84,119 @@ nextBtnThird.addEventListener('click', function() {
         <table>
             <tr>
                 <td>Hämtdag: </td>
-                <td>${pickupDate.value}</td>
+                <td>${orderDate.value}</td>
             </tr>
             <tr>
                 <td>Adress: </td>
-                <td>${pickupAddress.value}</td>
+                <td>${orderAddress.value}</td>
             </tr>
             <tr>
                 <td>Ort: </td>
-                <td>${pickupCity.value}</td>
+                <td>${orderCity.value}</td>
             </tr>
             <tr>
                 <td>Övrig info: </td>
-                <td>${pickupInfo.value}</td>
+                <td>${orderInfo.value}</td>
+            </tr>
+            <tr class="colspan">
+                <td colspan="2">Bilinformation</td>
+            </tr>
+            <tr>
+                <td>Regnummer: </td>
+                <td>${carRegno.value}</td>
+            </tr>
+            <tr>
+                <td>Kontrollnr: </td>
+                <td>${carRegnoCert.value}</td>
+            </tr>
+            <tr>
+                <td>Regbevis datum: </td>
+                <td>${carRegnoCertDate.value}</td>
+            </tr>
+            <tr>
+                <td>Bilmärke: </td>
+                <td>${carBrand.value}</td>
+            </tr>
+            <tr>
+                <td>Bilmodell: </td>
+                <td>${carModel.value}</td>
+            </tr>
+            <tr>
+                <td>Årsmodell: </td>
+                <td>${carYear.value}</td>
+            </tr>
+            <tr>
+                <td>Antal hjul: </td>
+                <td>${carWheels.value}</td>
+            </tr>
+            <tr>
+                <td>Antal regskyltar: </td>
+                <td>${carRegnoQty.value}</td>
+            </tr>
+            <tr>
+                <td>Nycklar: </td>
+                <td>${carKeys.value}</td>
+            </tr>
+            <tr class="colspan">
+                <td colspan="2">Ägarinformation</td>
             </tr>
             <tr>
                 <td>Namn: </td>
-                <td>${orderName.value}</td>
+                <td>${ownerName.value}</td>
             </tr>
             <tr>
-                <td>E-post: </td>
-                <td>${orderMail.value}</td>
+                <td>Adress: </td>
+                <td>${ownerAddress.value}</td>
+            </tr>
+            <tr>
+                <td>Postnummer: </td>
+                <td>${ownerZip.value}</td>
+            </tr>
+            <tr>
+                <td>Postort: </td>
+                <td>${ownerCity.value}</td>
             </tr>
             <tr>
                 <td>Telefon: </td>
-                <td>${orderPhone.value}</td>
+                <td>${ownerPhone.value}</td>
             </tr>
+            <tr>
+                <td>E-post: </td>
+                <td>${ownerMail.value}</td>
+            </tr>
+            <tr>
+                <td>Beställarinfo: </td>
+                <td>${otherContact.value}</td>
+            </tr>
+            <div class="control-other">
+                <tr class="colspan">
+                    <td colspan="2">Beställarinfo</td>
+                </tr>
+                <tr>
+                    <td>Namn: </td>
+                    <td>${otherName.value}</td>
+                </tr>
+                <tr>
+                    <td>Adress: </td>
+                    <td>${otherAddress.value}</td>
+                </tr>
+                <tr>
+                    <td>Postnummer: </td>
+                    <td>${otherZip.value}</td>
+                </tr>
+                <tr>
+                    <td>Postort: </td>
+                    <td>${otherCity.value}</td>
+                </tr>
+                <tr>
+                    <td>Telefon: </td>
+                    <td>${otherPhone.value}</td>
+                </tr>
+                <tr>
+                    <td>E-post: </td>
+                    <td>${otherMail.value}</td>
+                </tr>
+            </div>
         </table>
     `;
 });

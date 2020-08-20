@@ -59,6 +59,27 @@ body {
     position: relative;
 }
 
+.form-outer form .page .field.note {
+    display: block;
+    width: 94%;
+    text-align: left;
+    background: #eee;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-outer form .page .field.note p {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.form-outer form .page .field.note h5 {
+    font-size: 13px;
+    margin-bottom: 0.1rem;
+    line-height: 1.5;
+}
+
 .form-outer form .page .field.control {
     height: auto;
 }

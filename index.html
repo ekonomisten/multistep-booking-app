@@ -63,6 +63,54 @@
                         <div class="label">Övrig info*</div>
                         <textarea name="order_info" id="order_info"></textarea>
                     </div>
+                    <div class="field note">
+                        <h5>OBS! Bilen måste vara klar för upphämtning</h5>
+                        <p>Se till att plocka ur egna tillbehörigheter m.m. inför hämtning.</p>
+                    </div>
+                    <div class="title">Bilinformation</div>
+                    <div class="field">
+                        <div class="label">Regnummer*</div>
+                        <input type="text" name="car_regno" id="car_regno">
+                    </div>
+                    <div class="field">
+                        <div class="label">Kontrollnr enl. del 2 av regbevis*</div>
+                        <input type="text" name="car_regno_cert" id="car_regno_cert">
+                    </div>
+                    <div class="field">
+                        <div class="label">Utfärdandedatum av regbevis*</div>
+                        <input type="date" name="car_regno_date" id="car_regno_date">
+                    </div>
+                    <div class="field">
+                        <div class="label">Bilmärke*</div>
+                        <input type="text" name="car_brand" id="car_brand">
+                    </div>
+                    <div class="field">
+                        <div class="label">Bilmodell*</div>
+                        <input type="text" name="car_model" id="car_model">
+                    </div>
+                    <div class="field">
+                        <div class="label">Årsmodell*</div>
+                        <input type="text" name="car_year" id="car_year">
+                    </div>
+                    <div class="field">
+                        <div class="label">Färg*</div>
+                        <input type="text" name="car_color" id="car_color">
+                    </div>
+                    <div class="field">
+                        <div class="label">Antal hjul på bilen*</div>
+                        <input type="number" name="car_wheels" id="car_wheels">
+                    </div>
+                    <div class="field">
+                        <div class="label">Antal regskyltar*</div>
+                        <input type="number" name="car_regqty" id="car_regqty">
+                    </div>
+                    <div class="field">
+                        <div class="label">Nycklar?</div>
+                        <select name="car_keys" id="car_keys">
+                            <option value="Ja">Ja</option>
+                            <option value="Nej">Nej</option>
+                        </select>
+                    </div>
                     <div class="field nextBtn">
                         <button>Nästa</button>
                     </div>
@@ -71,16 +119,65 @@
                 <div class="page">
                     <div class="title">Beställarinformation</div>
                     <div class="field">
-                        <div class="label">Namn</div>
-                        <input type="text" name="order_name" id="order_name">
+                        <div class="label">Namn*</div>
+                        <input type="text" name="owner_name" id="owner_name">
                     </div>
                     <div class="field">
-                        <div class="label">E-post</div>
-                        <input type="email" name="order_mail" id="order_mail">
+                        <div class="label">Adress*</div>
+                        <input type="text" name="owner_address" id="owner_address">
                     </div>
                     <div class="field">
-                        <div class="label">Telefon</div>
-                        <input type="tel" name="order_phone" id="order_phone">
+                        <div class="label">Postnummer*</div>
+                        <input type="number" name="owner_zip" id="owner_zip">
+                    </div>
+                    <div class="field">
+                        <div class="label">Postort*</div>
+                        <input type="text" name="owner_city" id="owner_city">
+                    </div>
+                    <div class="field">
+                        <div class="label">Telefon (dagtid)*</div>
+                        <input type="tel" name="owner_phone" id="owner_phone">
+                    </div>
+                    <div class="field">
+                        <div class="label">E-post*</div>
+                        <input type="email" name="owner_mail" id="owner_mail">
+                    </div>
+                    <div class="field checkbox">
+                        <div class="label">Beställarinformation:</div>
+                        <select name="other_contact" id="other_contact">
+                            <option value="Samma som ägare">Samma som ägare</option>
+                            <option value="Annan person">Annan person</option>
+                        </select>
+                    </div>
+                    <div class="other_contact">
+                        <div class="field">
+                            <div class="label">Namn*</div>
+                            <input type="text" name="other_name" id="other_name">
+                        </div>
+                        <div class="field">
+                            <div class="label">Adress*</div>
+                            <input type="text" name="other_address" id="other_address">
+                        </div>
+                        <div class="field">
+                            <div class="label">Posnummer*</div>
+                            <input type="number" name="other_zip" id="other_zip">
+                        </div>
+                        <div class="field">
+                            <div class="label">Portort*</div>
+                            <input type="text" name="other_city" id="other_city">
+                        </div>
+                        <div class="field">
+                            <div class="label">Telefon (dagtid)*</div>
+                            <input type="tel" name="other_phone" id="other_phone">
+                        </div>
+                        <div class="field">
+                            <div class="label">E-post (för bekräftelse)*</div>
+                            <input type="email" name="other_mail" id="other_mail">
+                        </div>
+                        <div class="field textarea">
+                            <div class="label">Övriga upplysningar</div>
+                            <textarea name="other_info" id="other_info"></textarea>
+                        </div>
                     </div>
                     <div class="field btns">
                         <button class="prev-1 prev">Tillbaka</button>
