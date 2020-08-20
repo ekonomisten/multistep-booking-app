@@ -15,6 +15,7 @@ const progressCheck = document.querySelectorAll('.step .check');
 const bullet = document.querySelectorAll('.step .bullet');
 const acceptFee = document.querySelector('.accept-fees input');
 const otherContactDiv = document.querySelector('.other_contact');
+const carKeyLocationDiv = document.querySelector('.has-keys');
 let max = 4;
 let current = 1;
 
@@ -268,10 +269,19 @@ acceptFee.addEventListener('click', function() {
     }
 });
 
+// Hide or show div on select change
 otherContact.onchange = function() {
     if(otherContactDiv.className.match('hidden')) {
         otherContactDiv.classList.remove('hidden');
     } else {
         otherContactDiv.classList.add('hidden');
+    }
+}
+
+carKeys.onchange = function() {
+    if(carKeyLocationDiv.className.match('hidden')) {
+        carKeyLocationDiv.classList.remove('hidden');
+    } else {
+        carKeyLocationDiv.classList.add('hidden');
     }
 }

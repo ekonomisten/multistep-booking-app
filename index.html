@@ -65,7 +65,7 @@
                     </div>
                     <div class="field note">
                         <h5>OBS! Bilen måste vara klar för upphämtning</h5>
-                        <p>Se till att plocka ur egna tillbehörigheter m.m. inför hämtning.</p>
+                        <p>Se till att plocka ur era ägodelar m.m. inför hämtning.”.</p>
                     </div>
                     <div class="title">Bilinformation</div>
                     <div class="field">
@@ -107,9 +107,13 @@
                     <div class="field">
                         <div class="label">Nycklar?</div>
                         <select name="car_keys" id="car_keys">
-                            <option value="Ja">Ja</option>
                             <option value="Nej">Nej</option>
+                            <option value="Ja">Ja</option>
                         </select>
+                    </div>
+                    <div class="field hidden has-keys">
+                        <div class="label">Om ja, vart?*</div>
+                        <input tyle="text" name="car_keys_location" id="car_keys_location">
                     </div>
                     <div class="field nextBtn">
                         <button>Nästa</button>
