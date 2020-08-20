@@ -26,7 +26,6 @@ let orderName = document.querySelector('#order_name');
 let orderMail = document.querySelector('#order_mail');
 let orderPhone = document.querySelector('#order_phone');
 
-
 // Prevent form from submit 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -57,8 +56,39 @@ nextBtnThird.addEventListener('click', function() {
     progressCheck[current - 1].classList.add('active');
     current += 1;
 
-    console.log(pickupDate.value, pickupAddress.value);
-
+    // Output all info for control
+    controlOutput.innerHTML = `
+        <table>
+            <tr>
+                <td>Hämtdag: </td>
+                <td>${pickupDate.value}</td>
+            </tr>
+            <tr>
+                <td>Adress: </td>
+                <td>${pickupAddress.value}</td>
+            </tr>
+            <tr>
+                <td>Ort: </td>
+                <td>${pickupCity.value}</td>
+            </tr>
+            <tr>
+                <td>Övrig info: </td>
+                <td>${pickupInfo.value}</td>
+            </tr>
+            <tr>
+                <td>Namn: </td>
+                <td>${orderName.value}</td>
+            </tr>
+            <tr>
+                <td>E-post: </td>
+                <td>${orderMail.value}</td>
+            </tr>
+            <tr>
+                <td>Telefon: </td>
+                <td>${orderPhone.value}</td>
+            </tr>
+        </table>
+    `;
 });
 
 // Prev buttons
@@ -103,7 +133,7 @@ submitBtn.addEventListener('click', function() {
 });
 
 // Back to start btn 
-homeBtn.homeBtn.addEventListener('click', function() {
+homeBtn.addEventListener('click', function() {
     // Do something
 });
 
@@ -119,37 +149,3 @@ acceptFee.addEventListener('click', function() {
         nextBtnThird.disabled = false;
     }
 });
-
-// Output all info for control
-controlOutput.innerHTML = `
-    <table>
-        <tr>
-            <td>Hämtdag</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Adress</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Ort</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Övrig info</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Namn</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>E-post</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Telefon</td>
-            <td></td>
-        </tr>
-    </table>
-`;
