@@ -13,6 +13,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+    padding: 5% 0; /* Remove when live */
 }
 
 .container {
@@ -324,6 +325,10 @@ button.btn-home {
 }
 
 #controlOutput table tr td:first-child {
+    font-weight: 400;
+}
+
+#controlOutput table tr.colspan td {
     font-weight: 700;
 }
 

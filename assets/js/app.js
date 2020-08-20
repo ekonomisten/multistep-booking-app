@@ -62,6 +62,7 @@ firtNextBtn.addEventListener('click', function() {
     progressText[current - 1].classList.add('active');
     progressCheck[current - 1].classList.add('active');
     current += 1;
+    window.scroll({top: 0, left: 0, behavior: 'smooth'});
 });
 
 nextBtnSec.addEventListener('click', function() {
@@ -70,6 +71,7 @@ nextBtnSec.addEventListener('click', function() {
     progressText[current - 1].classList.add('active');
     progressCheck[current - 1].classList.add('active');
     current += 1;
+    window.scroll({top: 0, left: 0, behavior: 'smooth'});
 });
 
 nextBtnThird.addEventListener('click', function() {
@@ -78,6 +80,7 @@ nextBtnThird.addEventListener('click', function() {
     progressText[current - 1].classList.add('active');
     progressCheck[current - 1].classList.add('active');
     current += 1;
+    window.scroll({top: 0, left: 0, behavior: 'smooth'});
 
     // Output all info for control
     controlOutput.innerHTML = `
@@ -208,6 +211,7 @@ prevBtnSec.addEventListener('click', function() {
     progressText[current - 2].classList.remove('active');
     progressCheck[current - 2].classList.remove('active');
     current -= 1;
+    window.scroll({top: 0, left: 0, behavior: 'smooth'});
 });
 
 prevBtnThird.addEventListener('click', function() {
@@ -216,6 +220,7 @@ prevBtnThird.addEventListener('click', function() {
     progressText[current - 2].classList.remove('active');
     progressCheck[current - 2].classList.remove('active');
     current -= 1;
+    window.scroll({top: 0, left: 0, behavior: 'smooth'});
 });
 
 prevBtnFourth.addEventListener('click', function() {
@@ -224,6 +229,7 @@ prevBtnFourth.addEventListener('click', function() {
     progressText[current - 2].classList.remove('active');
     progressCheck[current - 2].classList.remove('active');
     current -= 1;
+    window.scroll({top: 0, left: 0, behavior: 'smooth'});
 });
 
 // Submit button
@@ -236,6 +242,7 @@ submitBtn.addEventListener('click', function() {
     bullet[current - 1].classList.add('active');
     progressText[current - 1].classList.add('active');
     progressCheck[current - 1].classList.add('active');
+    window.scroll({top: 0, left: 0, behavior: 'smooth'});
     controlOutput.style.display = 'none';
     setTimeout(function() {
         submitMessage.innerHTML = 'En e-post har skickats till dig med mer information gällande din bokning 😎';
