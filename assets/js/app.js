@@ -14,6 +14,7 @@ const progressText = document.querySelectorAll('.step p');
 const progressCheck = document.querySelectorAll('.step .check');
 const bullet = document.querySelectorAll('.step .bullet');
 const acceptFee = document.querySelector('.accept-fees input');
+const otherContactDiv = document.querySelector('.other_contact');
 let max = 4;
 let current = 1;
 
@@ -251,7 +252,7 @@ submitBtn.addEventListener('click', function() {
 
 // Back to start btn 
 homeBtn.addEventListener('click', function() {
-    // Do something
+    window.location.reload();
 });
 
 // Disable buttons
@@ -267,4 +268,10 @@ acceptFee.addEventListener('click', function() {
     }
 });
 
-// Validation 
+otherContact.onchange = function() {
+    if(otherContactDiv.className.match('hidden')) {
+        otherContactDiv.classList.remove('hidden');
+    } else {
+        otherContactDiv.classList.add('hidden');
+    }
+}

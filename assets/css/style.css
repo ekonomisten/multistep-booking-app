@@ -332,6 +332,6 @@ button.btn-home {
     font-weight: 700;
 }
 
-#controlOutput table tr td:last-child {
-    
+.hidden {
+    display: none;
 }
