@@ -118,12 +118,14 @@ body {
 .form-outer form .page .field.accept-fees input {
    height: 14px;
    width: 7%;
+   margin-top: 2px;
 }
 
 .form-outer form .page .field.accept-fees label {
     width: 93%;
     font-size: 12px;
-    margin-top: -2px;
+    text-align: left;
+    padding-left: 5px;
 }
 
 .form-outer form .page .field.textarea {
