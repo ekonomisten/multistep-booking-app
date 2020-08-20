@@ -149,3 +149,5 @@ acceptFee.addEventListener('click', function() {
         nextBtnThird.disabled = false;
     }
 });
+
+// Validation 
