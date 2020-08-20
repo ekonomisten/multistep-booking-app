@@ -191,6 +191,10 @@ button.submit:hover {
     background: #000;
 }
 
+button.btn-home {
+    display: none;
+}
+
 .submit-message {
     transition: 0.3s ease;
 }

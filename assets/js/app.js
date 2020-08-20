@@ -9,6 +9,7 @@ const prevBtnFourth = document.querySelector('.prev-3');
 const submitBtn = document.querySelector('.submit');
 const submitMessage = document.querySelector('.submit-message');
 const submitTitle = document.querySelector('.submit-title');
+const homeBtn = document.querySelector('.btn-home');
 const progressText = document.querySelectorAll('.step p');
 const progressCheck = document.querySelectorAll('.step .check');
 const bullet = document.querySelectorAll('.step .bullet');
@@ -87,17 +88,23 @@ prevBtnFourth.addEventListener('click', function() {
 
 // Submit button
 submitBtn.addEventListener('click', function() {
-    submitTitle.innerHTML = "Message sent🎉"
-    submitTitle.style.textAlign = "center";
-    submitBtn.style.display = "none";
-    prevBtnFourth.innerHTML = "Back to home!";
+    submitTitle.innerHTML = 'Bokning skickad 🎉'
+    submitTitle.style.textAlign = 'center';
+    submitBtn.style.display = 'none';
+    prevBtnFourth.style.display = 'none';
+    homeBtn.style.display = 'block';
     bullet[current - 1].classList.add('active');
     progressText[current - 1].classList.add('active');
     progressCheck[current - 1].classList.add('active');
     controlOutput.style.display = 'none';
     setTimeout(function() {
-        submitMessage.innerHTML = "A mail has been sent to you with further information regarding your booking 😎";
+        submitMessage.innerHTML = 'En e-post har skickats till dig med mer information gällande din bokning 😎';
     });
+});
+
+// Back to start btn 
+homeBtn.homeBtn.addEventListener('click', function() {
+    // Do something
 });
 
 // Disable buttons
